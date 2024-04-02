@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Alteração</title>
+
+    <script>
+        //função
+        function mensagem() {
+            //Obter curso selecionado
+            var curso = document.getElementById("cursos").value;
+            //Exibir curso selecionado
+            alert("O curso selecionado foi: " + curso)
+        }
+    </script>
+</head>
+
+<body>
+    <!--O evento onchange reconhece quando há alterações dentro do id, nesse caso ele exibirá um alert identificando a alteração-->
+    <select onchange="mensagem()" id="cursos">
+        <option>Escolha seu curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+</body>
+
+</html>

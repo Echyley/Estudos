@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Teclado</title>
+
+    <script>
+        function exibir(){
+            //obter valor do campo texto
+            var campo = document.getElementById("campo").value;
+            //exibir conteúdo digitado no campo
+            alert(campo);
+        }
+    </script>
+</head>
+
+<body>
+    <!--Usamos o keyup nesse exemplo :)-->
+    <input type="text" id="campo" onkeyup="exibir()">
+</body>
+
+</html>

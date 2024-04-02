@@ -1,0 +1,135 @@
+.wrapper {
+    font-family: Comic Sans MS;
+    background:
+        linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+        linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+    background-color: #708090;
+    background-size: 64px 128px;
+}
+
+.extra {
+    height: 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+.main {
+    flex-flow: column;
+    width: 65%;
+    display: flex;
+    margin: auto;
+    border-width: 1px solid;
+    border-style:double;
+    -webkit-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+}
+
+.header {
+    -webkit-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    min-height: 50px;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 15px 0px;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #fd9090 8px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    font-size: 20px;
+    padding:40px;
+    justify-content: center;
+}
+
+.footer {
+
+}
+
+.playground {
+    margin: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    background: linear-gradient(#202977 50%, rgba(255, 255, 255, 0) 0) 0 0,
+        radial-gradient(circle closest-side, #b91e1e 53%, rgba(255, 255, 255, 0) 0) 0 0,
+        radial-gradient(circle closest-side, #4a64b9 50%, rgba(255, 255, 255, 0) 0) 55px 0 rgb(69, 165, 61);
+    background-size: 110px 200px;
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 7px 31px -8px rgba(0, 0, 0, 0.75);
+}
+
+.PlaygContent {
+    display: flex;
+    width: auto;
+}
+
+.playWtables {
+    display: flex;
+    width: 400px;
+    max-height: 500px;
+    border: 5px solid black;
+    border-style: dotted;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.playWobject-fit {
+    width: autopx;
+    display: flex;
+    border: 5px solid black;
+    border-style: dotted;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.playWattach {
+    width: auto;
+    display: flex;
+    border: 5px solid black;
+    border-style: dotted;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+li {
+    height: auto;
+    width: auto;
+    background-color: lightgray;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+h2, p {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+table {
+    border-style: outset;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.48);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.48);
+}
+
+table thead th {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+table tfoot td {
+    background-color: lightgreen;
+}
+
+/*Esse comando agrupa a informação que você quiser separar :nth-child(even). */
+
+table tbody tr:nth-child(even) td {
+    background-color: whitesmoke;
+}
+
+/*O hover separa todos os itens em par. */
+
+table tbody tr:hover td {
+    background-color: rgb(78, 78, 78);
+}

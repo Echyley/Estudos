@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .medidas img {
+            width: 1120px; max-height: 600px;
+        }
+
+        #fixed {
+            margin: 10px 10px 10px 10px;
+            padding: 10px 10px 10px 10px;
+            width: 300px;
+            height: 300px;
+            background-image: url(mídias/watchtower.jpg);
+            background-size: cover;
+            border: 1px solid red;
+            overflow: auto;
+            background-attachment: fixed;
+        }
+
+        #scroll {
+            margin: 10px 10px 10px 10px;
+            padding: 10px 10px 10px 10px;
+            background-attachment: scroll;
+            width: 300px;
+            height: 300px;
+            background-image: url(mídias/watchtower.jpg);
+            background-size: cover;
+            border: 1px solid red;
+            overflow: auto;
+        }
+
+        #local {
+            margin: 10px 10px 10px 10px;
+            padding: 10px 10px 10px 10px;
+            background-attachment: local;
+            width: 300px;
+            height: 300px;
+            background-image: url(mídias/watchtower.jpg);
+            background-size: cover;
+            border: 1px solid red;
+            overflow: auto;
+        }
+
+        .playground {
+            border: 5px solid;
+            padding: 15px 15px 15px 15px;
+        }
+
+        #contain {
+            object-fit: contain;
+        }
+
+        #cover {
+            object-fit: cover;
+        }
+
+        #none {
+            object-fit: none;
+        }
+
+        #scale-down {
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="extra">
+            <table width="250" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th colspan="2">Extra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: lightgreen">Há mais valores junto do "=" para indicar algo!</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey;">=: Apenas herda o valor informado e ignora o resto;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey;">~=: Identifica a palavra exata dentro do valor, ou toda
+                            a frase
+                            contendo ela;</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey;">|=: Identifica a palavra exata dentro do valor se tiver
+                            acopldo
+                            a um hífem;</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey;">^=: Procura um prefixo em que o valor vai se iniciar;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey;">$=: Procura um sufixo em que o valor vai se iniciar;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey;">*=: Herda tudo apenas por ter o valor indicado;</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>yey</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+
+            <table width="250" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th colspan="2">Extra II</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: lightgreen">Unidade de medida VH!</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey;">A medida vh é igual a 1/100 da altura da viewport.
+                            Então, por exemplo, se a altura do navegador é 900px , 1vh equivale a 9px . E, analogamente,
+                            se a largura da viewport é 750px , 1vw equivale a 7.5px . Há infinitas possibilidades de uso
+                            com essas unidades de CSS moderno em uma folha de estilos :D<img width="250"
+                                src="mídias/vmin-viewport-demo.png" alt=""></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>yey</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <br>
+
+        <div class="main">
+
+            <div class="header">
+                <img width="1173" height="400" src="mídias/HtmlCssWallpaper.jpg" alt="">
+                <h1 align="center" style="color:white;">Estilizando</h1>
+            </div>
+
+            <div class="content">
+                <div class="SeletoresCss">
+                    <h2 align="center">Seletores CSS</h2>
+                    <p align="center">São as formas de se aplicar o css no código!</p>
+                    <ul align="center">
+                        <li>Seletor de Tags: Dentro da "head" de nosso html determinamos o estilo para todas as tags que
+                            desejarmos. Ex:
+                            h1, h2, h3 {background-color: black;}</li>
+                        <li>Seletor de ID: Utilizamos um atributo chamado "id" que pode ser colocado do lado da tag,
+                            podendo
+                            assim
+                            nomea-lo para ficar mais fácil de achar no CSS, é bem útil quando queremos editar só uma
+                            coisa
+                            em
+                            especifico, mas que se repete não sendo uma classe. Também é editado dentro da head. Ex:
+                            #nome
+                            do id {color:
+                            green;}</li>
+                        <li>Seletor de Classes: Identifica um grupo e aplica o CSS somente nele. Também editado na head.
+                            Ex:
+                            .nome da
+                            class {blah blah blah}</li>
+                        <li>Seletor Universal: Basicamente pega tudo no código e aplica o CSS. Tambem na head. Ex: *
+                            (sim, é
+                            só o
+                            asterisco) {blah blah}</li>
+                        <li>Seletor de Atributo: Aplica o CSS na tag onde se encontra o atributo com seu valor ou nome.
+                            Head. Ex:
+                            [atributo+valor] {blah}</li>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="Combinadores">
+                    <h2 align="center">Combinadores</h1>
+                        <p align="center">Pegam seus descendentes.</p>
+                        <ul align="center">
+                            <li align="center">Combinador Descendente: Pode ser aplicado com o espaço entre uma tag e
+                                outra
+                                que se deseja
+                                aplicar o
+                                mesmo estilo Css e que são descendentes. <b>Ex: li li {background-color: black}</b></li>
+                            <li align="center">Combinador filho: É aplicado pelo sinal de maior ">" aos seus "filhos" ou
+                                a
+                                tag dentro dele.
+                                <b>Ex: div
+                                    > p {color: blue}</b>
+                            </li>
+                            <li align="center">Combinador irmão adjacente: Aplicado pelo sinal de mais "+", usamos pra
+                                selecionar o
+                                elemento depois do
+                                seletor que definirmos a esquerda.
+                                Ex: div + p {color: tomato} (neste caso ele sempre pegará o primeiro "p" q apararecer,
+                                ignorando os
+                                outros).</li>
+                            <li align="center">Combinador irmão geral: Sinal de tíl "~", pega todos os irmãos da tag
+                                informada. Ex: div ~ p
+                                {blah blah
+                                blah}</li>
+                        </ul>
+                </div>
+                <br>
+
+                <div class="Width&Height">
+                    <h2 align="center">Width e Height</h2>
+                    <p align="center">Altura e largura. O width é somado da seguinte forma: width = largura + borda +
+                        padding; Neles
+                        podemos aplicar alguns elementos predefinidos:</p>
+                    <ul align="center">
+                        <li>auto: Aplica um valor automático, alterado sempre que o navegador achar necessário;</li>
+                        <li>initial: Aplica o valor padrão, geralmente usado quando não se sabe esse padrão;</li>
+                        <li>inherit: Define o valor da propriedade de acordo com seu elemento pai;</li>
+                        <li>min e max-width: Largura máxima e minima, se adapta de acordo com o conteúdo;</li>
+                        <li>min e max-height: Altura máxima e minima, se adapta de acordo com o conteúdo;</li>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="Margin">
+                    <h2 align="center">Margin</h2>
+                    <p align="center">Cria espaçamento externo em volta do elemento. Ex: .main {margin: 10px 10px 10px
+                        10px} (Ele
+                        aplica o valor
+                        para toda as direções podendo ser alterado). Tem suas variações tbm:</p>
+                    <ul align="center">
+                        <li>margin-top: Coloca margem só em cima;</li>
+                        <li>margin-bottom: Coloca margem só em baixo;</li>
+                        <li>margin-left: Coloca margem só na esquerda;</li>
+                        <li>margin-right: Coloca margem só na direita.</li>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="Padding&Box-sizing">
+                    <h2 align="center">padding</h2>
+                    <p align="center">Aplica espaço interno separando o conteúdo do elemento das bordas, podendo ser
+                        aplicado para
+                        todos os lados
+                        também, as variações são as mesmas que a da margin.</p>
+                    <h2 align="center">box-sizing</h2>
+                    <p align="center">Aceita dois valores:</p>
+                    <ul>
+                        <li>content-box: Soma o padding com o height</li>
+                        <li>border-box: Soma o padding com as bordas, determinando largura e altura</li>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="PropriedadesMídias">
+                    <h2 align="center">Propriedades de mídias</h2>
+                    <p align="center">As seguintes propriedades são mais usadas para videos e imagens:</p>
+                    <ul>
+                        <li>Object-fit: Determina dimensão de vídeo e imagem para caber em containers pre-definidos no
+                            style como width e height. Seus modos são:
+                            <ol>
+                                <li><b>fill:</b> Preenche o container distorcendo a imagem;</li>
+                                <li><b>contain:</b> Apenas preenche o container com o tamaho padrão da imagem;</li>
+                                <li><b>cover</b> que preenche todo o container cortando a imagem pra caber nele;</li>
+                                <li><b>none:</b> Ignora o width e height do elemento pai mantendo seu tamanho original;
+                                </li>
+                                <li><b>scale-down:</b>Pega o menor valor possível aplicando-o à imagem.</li>
+                            </ol>
+                            <ins><b>
+                                    <p>Veja exemplos no playground</p>
+                                </b></ins>
+                        </li>
+                        <li>Object-position: especifica como deve ser posicionado verticalmente como horizontalmente,
+                            pode centralizar imagens ou vídeos; Ex: img {object-position: 50% 50%;}</li>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="Background">
+                    <h2 align="center">Fundo de Elementos</h2>
+                    <ul>
+                        <li>background-color: Altera a cor do fundo;</li>
+                        <li>background-image: Coloca uma imagem como fundo usando a função url('');</li>
+                        <li>background-position: Muda a posição da imagem dentro do container.</li>
+                        <li>background-attachment: Define como o fundo se comporta a algumas ações, como rolar a bolinha
+                            do mouse etc. nela pode-se definir 3 valores diferentes:
+                            <ol>
+                                <li>fixed: Fundo fixo; </li>
+                                <li>scroll: Rola junto com a div principal;</li>
+                                <li>local: Imagem rola junto com o conteúdo do elemento</li>
+                            </ol>
+                            <ins><b><p>Veja exemplos no playground</p></b></ins>
+                        </li>
+                        <br>
+
+                        <h2>Background-origin</h2>
+                        <p>Define ponto de origem do fundo. Também tem sues valores:</p>
+                        <ol>
+                            <li>Padding-box: Valor padrão, canto superior esquerdo;</li>
+                            <li>border-box: Da esquerda cobrindo espaçamento externo;</li>
+                            <li>content-box: Se posiona da esquerda, mas não cobre a borda nem o espaçamento externo.
+                            </li>
+                        </ol>
+                        <br>
+
+                        <h2>Background-clip</h2>
+                        <p>Permite controlar a imagem ou cor de fundo, preenche a área de borda, a área externa ou o conteúdo. Seus valores são iguais o do origin.</p>
+                        <br>
+
+                        <h2>Background-blend-mode</h2>
+                        <p>Define como a imagem de fundo ou cor se misturam. Seus modos de mesclagem são muitos, tente brincar com eles no playground e ver o que cada um faz (Explicar vai demorar muito...)</p>
+
+                    </ul>
+                </div>
+                <br>
+
+                <div class="Border">
+                    <h2 align="center">Bordas</h2>
+                    <ul>
+                        <li>border: A mais comumente usada. É possível alterar seu estilo e cor;</li>
+                        <li>border-radius: Arredonda cantos de objetos com px e %;</li>
+                        <li>border-image: Coloca uma imagem como borda. Tem suas variações</li>
+                        <li>border-style: Define estilo da borda;</li>
+                    </ul>
+
+                </div>
+
+                <div class="Font">
+                    <h2 align="center">Fontes</h2>
+                    <p align="center">Existem 3 formas de mudar a fonte do seu código:</p>
+                    <ol>
+                        <li>font-family: Pode ser usado dentro do body mesmo do html, dai é só alterar a fonte a fonte;</li>
+                        <li>@font-face: Altera a fonte dentro do arquivo .css;</li>
+                        <li>@import url(): Importa uma fonte especifica a partir de uma url aplicando configurações predefinidas do font-face.</li>
+                    </ol>
+                    <p align="center">Algumas variações de fontes:</p>
+                    <ul>
+                        <li>font-weight: Muda o "peso" da fonte;</li>
+                        <li>font-style: Muda o estilo da fonte;</li>
+                        <li>font-variant: Vareia no formato e tamanho da fonte. Só aceita dois valores: small-caps que diminui o formato e tamanho e o normal, q deixa no tamanho e formato padrão;</li>
+                        <li>font-stetch: Deixa o texto mais estreito;</li>
+                        <li>line-height: Define espaçamento em cima e embaixo do texto;</li>
+                    </ul>
+                    <ins><b><p>Se quiser saber mais pesquise e brinque no playground!</p></b></ins>
+                </div>
+                <br>
+
+                <div class="Text">
+                    <h2>Text</h2>
+                    <p>Vamos ver algumas propriedades de estilização de texto (de novo).</p>
+                    <ul>
+                        <li>text-transform: Define caracteres maiúsculos e minusculos, existem muitas variações... Vai brincar no playground.</li>
+                        <li>text-align: Alinha o texto.</li>
+                        <li>text-decoration: Adiciona ou remote linhas do texto, aceita alguns valores. Vai brinca!</li>
+                        <li>text-ident: Define recuo da primeira linha do nosso texto;</li>
+                        <li>letter-spacing: Adiciona espaçamento entre as letras;</li>
+                        <li>word-spacing: Adiciona espaço entre as palavras;</li>
+                        <li>white-space: Define como espaço dos textos se comportam, aceita vários valores, é só pesquisar e brincar com eles no playground pra saber o que cada um faz</li>
+                        <li>word-wrap: Quebra a palavra para que caiba no container;</li>
+                        <li>word-break: Quebra a palavra caso seja muito grande;</li>
+                        <li>writing-mode: Define a orientação de leitura do texto;</li>
+                        <li>text-overflow: Define como vamos mostrar que há mais conteúdo no texto além do que se pode visualizar naquele momento;</li>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="shadow">
+                    <h2>Shadow</h2>
+                    <p>Bora adicionar profundidade!</p>
+                    <ul>
+                        <li>box-shadow: Adiciona uma caixa de sombra atrás do objeto;</li>
+                        <li>filter: Adiciona alguns "filtros", sendo que drop-shadow é um de seus valores. Sim, ele adiciona sombra também.</li>
+                        <li>text-shadow: Adiciona sombra em texto;</li>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="OtherProps">
+                    <h2>Outras propriedades...</h2>
+                    <ul>
+                        <li>opacity: Adiciona trasparencia;</li>
+                        <li>overflow: Define como o conteúdo deve ser exibido caso ultrapasse os limites do container. Tem alguns valores QUE VOU LISTAR DEPOIS;</li>
+                    </ul>
+                </div>
+                
+                <h2>Redefinindo as propiedades padrões dos navegadores</h2>
+                <p>Ao criar o arquivo reset.css ele vai sobrepor os padrões de estilo padrão dos navegadores. Dá pra achar vários padrões prontos na internet ou fazer do zero.</p>
+
+                <div class="medidas">
+                    <h2>Unidade de medidas (depois de ruchar o curso eu arrumo)</h2>
+                    <img src="mídias/absolutas.png" alt="">
+                    <img src="mídias/pixel físico e lógico.png" alt="">
+                    <img src="mídias/pixel resolução e densidade.png" alt="">
+                    <img src="mídias/em.png" alt="">
+                    <img src="mídias/Rem.png" alt="">
+                    <img src="mídias/viewport.png" alt="">
+                    <img src="mídias/unidades relativas.png" alt="">
+                    <img src="mídias/ex.png" alt="">
+                    <img src="mídias/ch.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="footer">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="playground">
+            <h1 style="border-radius:40px ;width:500px;background-color:#202977;color:aliceblue" align="center">
+                Playground :D <br> É brincando que se aprende!</h1>
+
+                <div class="playWtables">
+                    <h2>Tabelas!</h2>
+                    <table width="250" cellspacing="0" cellpadding="5">
+                        <thead>
+                            <tr>
+                                <th colspan="2">my table</th>
+                            </tr>
+                            <tr>
+                                <th>nome</th>
+                                <th>idade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kino</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Hermes</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Echy</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>Echy</td>
+                                <td>19</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td>3</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <br>
+
+                <div class="playWobject-fit">
+                    <h2>Object-fit!</h2>
+                    <div id="fill">
+                        <code align="center">object-fit: fill;</code> (padrão)
+                        <br>
+                        <img align="center"
+                            style="border:5px solid black; width: 100%; height:100%; width: 200px; height: 300px;"
+                            src="mídias/k3.jpg" alt="ex1" id="fill">
+                    </div>
+                    <br>
+                    
+                    <code align="center">object-fit: contain;</code>
+                    <br>
+                    <img align="center"
+                        style="border:5px solid black; width: 100%; height:100%; width: 200px; height: 300px;"
+                        src="mídias/k3.jpg" alt="ex2" id="contain">
+                    <br>
+                    <code align="center">object-fit: cover;</code>
+                    <br>
+                    <img align="center"
+                        style="border:5px solid black; width: 100%; height:100%; width: 200px; height: 300px;"
+                        src="mídias/k3.jpg" alt="ex3" id="cover">
+                    <br>
+                    <code align="center">object-fit: none;</code>
+                    <br>
+                    <img align="center"
+                        style="border:5px solid black; width: 100%; height:100%; width: 200px; height: 300px;"
+                        src="mídias/k3.jpg" alt="ex4" id="none">
+                    <br>
+                    <code align="center">object-fit: scale-down;</code>
+                    <br>
+                    <img align="center"
+                        style="border:5px solid black; width: 100%; height:100%; width: 200px; height: 300px;"
+                        src="mídias/k3.jpg" alt="ex4" id="scale-down">
+                </div>
+                <br>
+
+                <div class="playWattach">
+                    <h2>Object-Attachment</h2>
+                    <div id="fixed">
+                        <code style="color: white;"
+                            align="center"><b>Background Attachment: fixed;</b><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos odit expedita nihil? Sed esse blanditiis distinctio harum cupiditate nostrum eius, nemo incidunt sit, quia dolor mollitia quisquam quam nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo rerum laudantium ex, facere eaque commodi maiores explicabo. Obcaecati voluptate sed at quaerat consequuntur fugit veniam molestiae, sapiente delectus possimus.</p></code>
+                    </div>
+                    <div id="scroll">
+                        <code style="color: white;"
+                            align="center"><b>Background Attachment: scroll;</b><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos odit expedita nihil? Sed esse blanditiis distinctio harum cupiditate nostrum eius, nemo incidunt sit, quia dolor mollitia quisquam quam nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo rerum laudantium ex, facere eaque commodi maiores explicabo. Obcaecati voluptate sed at quaerat consequuntur fugit veniam molestiae, sapiente delectus possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora est, soluta voluptate corporis mollitia in expedita velit eos dolore nam fuga cum perferendis praesentium consequuntur quod ratione optio iusto!</p></code>
+                    </div>
+                    <div id="local">
+                        <code style="color: white;"
+                            align="center"><b>Background Attachment: local;</b><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos odit expedita nihil? Sed esse blanditiis distinctio harum cupiditate nostrum eius, nemo incidunt sit, quia dolor mollitia quisquam quam nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo rerum laudantium ex, facere eaque commodi maiores explicabo. Obcaecati voluptate sed at quaerat consequuntur fugit veniam molestiae, sapiente delectus possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime qui consequatur quia! Expedita quo enim dolore laboriosam minus vero veniam necessitatibus dolor voluptatibus et, totam modi nam fugit rerum laborum?</p></code>
+                    </div>
+                </div>
+                <br>
+            
+        </div>
+        <br>
+    </div>
+</div>
+
+</body>
+
+</html>

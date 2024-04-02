@@ -1,0 +1,4 @@
+https://docs.oracle.com/en/cloud/iaas/messaging-cloud/csmes/rest-api-http-status-codes-and-error-messages-reference.html#GUID-AAB1EE32-BE4A-4ACC-BEAC-ABA85EB41919
+https://www.restapitutorial.com/httpstatuscodes.html
+https://dzone.com/refcardz/rest-foundations-restful?chapter=5
+http://www.semeru.com.br/blog/http-status-codes-em-servicos-rest/

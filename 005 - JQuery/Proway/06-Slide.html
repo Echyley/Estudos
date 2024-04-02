@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+
+    <!--JQuery-->
+    <script src="jquery-3.6.4.js"></script>
+    <!--Script-->
+    <script>
+        //Ao carregar o documento
+        $(document).ready(function () {
+            //ocultar img ao carregar pagina
+            $("img").css("display","none");
+            //exibir img
+            $(".exibir").click(function(){
+                $("img").slideDown(1000);
+            })
+            //ocultar img ao clicar no botão
+            $(".ocultar").click(function(){
+                $("img").slideUp(3000);
+            })
+            //O tempo funciona da mesma forma como no fade
+        });
+    </script>
+</head>
+
+<body>
+
+    <img style="width: 500px;" src="paisagem1.jpg">
+    <img style="width: 500px;" src="paisagem2.jpg">
+    <img style="width: 500px;" src="paisagem3.jpg">
+    <hr>
+    <button class="exibir">Exibir paisagens :D</button>
+    <button class="ocultar">Ocultar paisagens :(</button>
+    <hr>
+    
+</body>
+
+</html>

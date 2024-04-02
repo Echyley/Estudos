@@ -1,0 +1,7 @@
+Todos os exercícios e projetos estão em ...
+
+https://github.com/leandrocgsi/RestWithSpringBootUdemy
+
+e
+
+https://github.com/leandrocgsi/RestWithSpringBootUdemyArchetype

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade</title>
+
+    <!--JQuery-->
+    <script src="jquery-3.6.4.js"></script>
+    <!--Script-->
+    <script>
+        //Ao carregar o documento
+        $(document).ready(function () {
+            //ocultar img ao carregar pagina
+            $("img").css("display","none");
+            //exibir img
+            $("#exibir").click(function(){
+                $("img").fade(1000);
+            })
+            //ocultar img ao clicar no botão
+            $("#ocultar").click(function(){
+                $("img").fadeOut(3000);
+            })
+        });
+        /*
+        TEMPO DE FADE
+        1º Default 0,4s
+        2º Slow 0,6s
+        3º Atribuir valor, ex: 3000 = 3s
+        */
+    </script>
+</head>
+
+<body>
+
+    <img style="width: 1000px;" src="k3.jpg">
+    <hr>
+    <button id="exibir">Exibir Kenshin :D</button>
+    <button id="ocultar">Ocultar Kenshin :(</button>
+
+</body>
+
+</html>

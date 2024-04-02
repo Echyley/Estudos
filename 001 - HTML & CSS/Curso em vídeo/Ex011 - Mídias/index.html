@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML5</title>
+    <style>
+        mark {background-color: aqua;}
+    </style>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos</p>
+    <p>A tag <mark>"picture"</mark> nos permite criar vários sources de img na mesma semântica.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        
+        <img src="Imagens/grande.png" alt="imagem flexivel">
+    </picture>
+
+    <p>OBS:É necessario deixar um source como base, geralmente usa-se a imagem com mais pixels. E somente depois de ter essa base que se pode colocar os outros sources acima do source base sem ocorrência de erros.</p>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5. Usamos a tag <mark>"audio"</mark> e em source colcamos o conteúdo baixado em nosso servidor.</p>
+
+    <audio src="midia/Gintama - Glorious Days.mp3"controls loop></audio>
+    <br>
+    <audio src="midia/JimmyEatWorld - The Middle.mp3"controls loop></audio>
+
+    <p>Agora, se de repente a o úsuario utilizar uma ferramenta de navegação que não suporta o formato do áudio, é necessário utilizar dentro da tag "audio' um tipo de souce diferente que é o <ins>source src.</ins> Este source alterna entre os itens dentro dele em sequência tentando reproduzir seu conteúdo (Precisa ser mais de um e com formatos diferentes).</p>
+
+    <audio preload="metadata" controls>
+        <source src="midia/Undertale - Home.mp3" type="audio/mpeg">
+        <source src="midia/Undertale - Home.ogg" type="audio/ogg">
+        <source src="midia/Undertale - Home.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Undertale - Home.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+
+    <h2>Elementos mais utilizados na tag "audio":</h2>
+    <ul>
+        <li>Preload: Marca como prioridade no carregamento.</li>
+        <li>Auto: Não muito recomendado, pois o site inteiro só vai funcionar quando o conteúdo todo for carregado.</li>
+        <li>Metadata: Carrega só algumas informações relevantes.</li>
+        <li>None: Não carrega nada a não ser que o usuário clique no conteúdo.</li>
+        <li>Controls: Libera o controle do audio (caixa do áudio com botão de volume, etc).</li>
+        <li>Loop: Reproduz o áudio.</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <!--JQuery-->
+    <script src="jquery-3.6.4.js"></script>
+    <!--Script-->
+    <script>
+        //Ao carregar o documento
+        $(document).ready(function () {
+            //variaveis
+            var campo = $("input").val();
+            var titulo = $("#titulo").html();
+            var subtitulo = $(".subtitulo").html();
+
+            //exibir
+            alert(campo);
+            alert(titulo);
+            alert(subtitulo);
+        });
+    </script>
+</head>
+
+<body>
+
+    <input type="text" value="Campo Nome">
+    <h1 id="titulo">Titulo :D</h1>
+    <h2 class="subtitulo">Subtitulo :D</h2>
+
+</body>
+
+</html>

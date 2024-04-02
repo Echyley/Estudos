@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Videos hospedados localmente</h1>
+    <p>Este vídeo está no meu servidor:</p>
+    
+    <video width="500" height="500" poster="midias/No War img.png" controls>
+        <source src="midias/No War.mp4" type="video/mp4">    
+        <source src="midias/No War.webm" type="video/webm">
+        <source src="midias/No War.ogv" type="video/ogg">
+        <source src="midias/No War.m4v" type="video/mp4">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <p>O problema de colocar videos assim em seu site é que toda vez você vai ter que criar a tag <mark>"video"</mark> com vários sources src com vários formatos (Assim como fizemos em áudios).</p>
+
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/X5S0OjTq9kY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Ao fazer isso consumimos dados direto do youtube e não de nosso próprio site. <strong><ins>OBS: Sempre use videos de sua própria autoria ou livre para uso externo.</ins></strong></p>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <p>O Vimeo é recomendado caso você queira mais personalização no player do seu video redirecionado pro seu site. Assim como no youtube é necessário criar um canal e postar seu vídeo direto lá, ai somente depois é possivel redirecioná-lo. <ins><strong>Ps: Não achei nenhum vídeo que quisesse por aqui do Vimeo.</strong></ins></p>
+    
+</body>
+</html>

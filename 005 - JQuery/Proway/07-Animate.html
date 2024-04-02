@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+
+    <!--CSS-->
+    <style>
+        img {
+            width: 500px;
+        }
+    </style>
+
+    <!--JQuery-->
+    <script src="jquery-3.6.4.js"></script>
+    <!--Script-->
+    <script>
+        //Ao carregar o documento
+        $(document).ready(function () {
+            //Efeito
+            $("#aumentar").click(function () {
+                //Dentro do animate podemos animar em css :)
+                $("img").animate({
+                    width: "1000px"
+                });
+            });
+            $("#diminuir").click(function () {
+                //Dentro do animate podemos animar em css :)
+                $("img").animate({
+                    width: "500px"
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <img src="k3.jpg">
+    <br>
+    <button id="aumentar">Aumentar</button>
+    <button id="diminuir">Diminuir</button>
+
+</body>
+
+</html>

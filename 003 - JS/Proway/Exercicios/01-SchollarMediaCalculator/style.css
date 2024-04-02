@@ -1,0 +1,113 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: radial-gradient(crimson, rgb(57, 5, 16), black);
+  text-align: center;
+  color: white;
+  justify-content: center;
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.wrapper {
+  width: 500px;
+  padding: 5vh 0 8.9vh 0;
+}
+
+#title {
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  animation: colorRotate 6s linear 0s infinite, float 5s ease-in-out infinite;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.763);
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  padding: 5vh 8.5vh 5vh 8.5vh;
+  margin: 6vh 7vh 0 6vh;
+  border: 1px solid rgba(255, 255, 255, 0.311);
+  border-radius: 25px;
+}
+
+.form button {
+  background-color: purple;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 1vh;
+  margin: 3vh 0 0 0;
+}
+
+.form button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.form input {
+  color: rgb(255, 248, 248);
+  background-color: rgba(248, 248, 248, 0.426);
+  text-align: center;
+  font-size: large;
+  height: 30px;
+  margin: 1vh 0 2vh 0;
+  border: 1px solid rgba(255, 255, 255, 0.647);
+  border-radius: 15px;
+}
+
+#result {
+  margin: 7vh 0 0 0;
+  transition: all 0.3s ease;
+}
+
+#resultado {
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #aabbf8;
+  }
+
+  10% {
+    color: #2692d9;
+  }
+
+  50% {
+    color: #00ff00;
+  }
+
+  75% {
+    color: #ff3399;
+  }
+
+  100% {
+    color: #a9a9ee;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-30px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+
+    <!--JQuery-->
+    <script src="jquery-3.6.4.js"></script>
+    <!--Script-->
+    <script>
+        //Ao carregar o documento
+        $(document).ready(function () {
+            //Selecionar e alterar img
+            $("img").attr("width","700px");
+            $("img").attr("title","Alterando title via jQuery");
+        });
+    </script>
+</head>
+
+<body>
+    <img src="logo_proway.png" width="100" title="Proway">
+</body>
+
+</html>
